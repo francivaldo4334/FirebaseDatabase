@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Login"
+android:background="@color/backgroud_layout"
+android:paddingHorizontal="20dp"
+android:paddingTop="40dp"
+android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_marginTop="@dimen/margin_itens"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edt_email_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_marginTop="@dimen/margin_itens"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha: "
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/edt_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Senha"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+</LinearLayout>
+
+<Button
+    android:id="@+id/bt_login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:text="Logar"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="50dp"/>
+<Button
+    android:id="@+id/bt_cadastro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15dp"
+    android:text="Criar Cadastro"
+    android:backgroundTint="@color/backgroud_layout"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="50dp"/>
+</LinearLayout>
